@@ -1,100 +1,43 @@
-/* CSS Reset & Global Styles */
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans';
-  -webkit-appearance: none;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    margin: auto;
+    background-color: #191b28;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-::placeholder {
-  color: rgb(221, 221, 221);
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #dcdbe1;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 65%;
 }
 
-.wrapper {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(20, 19, 19);
-  transition: 0.8s all;
+#btn {
+    background-color: #fb0066;
 }
 
-h1 {
-  margin-bottom: 1.5%;
-  color: #fff;
-  font-weight: normal;
+input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #64278f;
+    color: white;
+    border: solid black 0.5px;
+    width: 100%;
+    border-radius: 5px;
+    height: 70%;
+    outline: none;
 }
 
-.container {
-  width: 350px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-}
-
-.top-buttons {
-  display: flex;
-  align-items: center;
-
-}
-
-input {
-  padding: 25px;
-  color: rgb(255, 255, 255);
-  font-size: 1em;
-  cursor: pointer;
-  width: 70px;
-  background-color: rgb(47, 51, 50);
-  border: none;
-  outline: none;
-  border-radius: 100px;
-  margin: 0.2em;
-}
-
-.first-row,
-.second-row,
-.third-row,
-.fourth-row,
-.fifth-row {
-  margin-bottom: 4px;
-}
-
-input[type="text"] {
-  background-color: rgb(47, 51, 50);
-  width: 222.5px;
-}
-
-input[type="button"]:hover {
-  background-color: rgb(101, 101, 101);
-  color: #fff;
-}
-
-#clear-button {
-  color: #fff;
-  background-color: rgb(255, 42, 42);
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-#github-icon {
-  margin-right: 10px;
-}
-
-.theme-button {
-  all: unset;
-  cursor: pointer;
+input:active[type=button] {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
 }
